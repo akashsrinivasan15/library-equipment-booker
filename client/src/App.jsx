@@ -116,7 +116,10 @@ const handleCancelReservation = async (reservationId) => {
   }
 };
 
-  const { summary, activeCheckouts } = dashboard;
+  const {
+  summary,
+  activeCheckouts = [],
+} = dashboard || {};
 
   return (
     <div className="min-h-screen bg-[#F5F6F4] font-sans text-[#1B2430]">
@@ -202,7 +205,7 @@ const handleCancelReservation = async (reservationId) => {
             <div className="px-5 py-3 border-b border-[#E3E6E1]">
               <h3 className="font-semibold text-sm">Active Checkouts</h3>
             </div>
-            {activeCheckouts.length === 0 ? (
+            {activeCheckouts?.length === 0 ? (
               <p className="px-5 py-6 text-sm text-[#6B7280]">
                 Nothing is checked out right now.
               </p>
