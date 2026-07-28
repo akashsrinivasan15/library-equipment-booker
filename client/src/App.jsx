@@ -23,6 +23,7 @@ function formatDate(dateString) {
 }
 
 export default function App() {
+  console.log("API_BASE =", API_BASE);
   const [equipment, setEquipment] = useState([]);
   const [dashboard, setDashboard] = useState({ summary: null, activeCheckouts: [] });
   const [studentId, setStudentId] = useState('STU-101');
