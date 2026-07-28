@@ -3,8 +3,7 @@ import { Package, PackageCheck, PackageX, Users, RotateCcw } from 'lucide-react'
 import toast, { Toaster } from 'react-hot-toast';
 
 // const API_BASE = 'http://localhost:5000/api';
-const API_BASE = 'https://library-equipment-booker.onrender.com/api';
-
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 function timeAgo(dateString) {
   const diffMs = Date.now() - new Date(dateString).getTime();
