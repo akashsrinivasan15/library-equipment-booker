@@ -10,8 +10,6 @@ A full-stack web application designed to help students and faculty members check
 * 📅 **Real-Time Availability** – Check what's currently available before booking
 * 📝 **Book Equipment** – Reserve items for a specific date/time range
 * 📊 **Manage Reservations** – View, edit, or cancel your existing bookings
-* 👤 **User Roles** – Separate access for students and faculty members
-* 🔐 **Authentication** – Secure login/signup system
 * 📈 **Admin Dashboard** – Track inventory, usage, and overdue returns *(if applicable)*
 
 ---
@@ -120,24 +118,6 @@ library-equipment-booker/
 └── README.md
 ```
 
----
-
-## 📡 API Endpoints (Sample)
-
-| Method | Endpoint                  | Description                     |
-|--------|----------------------------|----------------------------------|
-| GET    | `/api/equipment`          | Get all equipment items         |
-| GET    | `/api/equipment/:id`      | Get details of a specific item  |
-| POST   | `/api/bookings`           | Create a new booking            |
-| GET    | `/api/bookings/user/:id`  | Get bookings for a user         |
-| PUT    | `/api/bookings/:id`       | Update a booking                |
-| DELETE | `/api/bookings/:id`       | Cancel a booking                |
-| POST   | `/api/auth/login`         | User login                      |
-| POST   | `/api/auth/register`      | User registration               |
-
-> Update this table to match your actual routes.
-
----
 
 ## 🤝 Contributing
 
