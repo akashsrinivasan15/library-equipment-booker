@@ -2,7 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Package, PackageCheck, PackageX, Users, RotateCcw } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 
-const API_BASE = 'http://localhost:5000/api';
+// const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://library-equipment-booker.onrender.com/api';
 
 function timeAgo(dateString) {
   const diffMs = Date.now() - new Date(dateString).getTime();
@@ -200,7 +201,6 @@ const handleCancelReservation = async (reservationId) => {
             />
           </div>
 
-          {/* Active Checkouts Table */}
           <div className="bg-white rounded-xl border border-[#E3E6E1] shadow-sm overflow-hidden">
             <div className="px-5 py-3 border-b border-[#E3E6E1]">
               <h3 className="font-semibold text-sm">Active Checkouts</h3>
