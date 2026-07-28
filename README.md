@@ -5,9 +5,9 @@ A full-stack web application designed to help students and faculty members check
 ---
 
 ## 🚀 Tech Stack
-* **Frontend:** React.js / HTML & CSS
+* **Frontend:** React.js, TailwindCss
 * **Backend:** Node.js, Express.js
-* **Database:** MongoDB / PostgreSQL
+* **Database:**MySql
 
 ---
 
